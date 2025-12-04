@@ -1,3 +1,5 @@
+# An exploration of Risk Terrain Modeling for the city of Paris
+
 **Project Overview**
 
 This repository documents a Risk Terrain Modeling (RTM) simulation applied to the city of Paris. This project is submitted as part of the evaluation for the Data and Algorithms for Public Policy course at Sciences Po.
@@ -16,7 +18,7 @@ The statistical model used is  Negative Binomial Generalized Linear Model (GLM.N
 
 **Acknowledgement**
 
-This work follows the conceptual and coding framework established in "Public Policy Analytics: Code & Context for Data Science in Government" by Ken Steif, Ph.D. Significant parts of this code are co-authored by Gemini and Claude Sonnet 4.5.
+This work is inspired by the conceptual and coding framework established in "Public Policy Analytics: Code & Context for Data Science in Government" by Ken Steif, Ph.D. Significant parts of this code are co-authored with Gemini and Claude Sonnet 4.5.
 
 Author: Giovanni Cerboni
 
