@@ -1,8 +1,23 @@
-# RTM-simulation
-This folder contains the R script, the data and some information concerning an Risk Terrain Modelling simulation for the city of Paris. It is part of the evaluation for "Data and Algorithms for Public Policy" at Sciences Po.
+**Project Overview**
 
-Most of its functioning is inspired by "[Public Policy Analytics: Code & Context for Data Science in Government]([url](https://urbanspatial.github.io/PublicPolicyAnalytics/))" by Ken Steif, Ph.D. The material in this repository is authored by Giovanni Cerboni.
+This repository documents a Risk Terrain Modeling (RTM) simulation applied to the city of Paris. This project is submitted as part of the evaluation for the Data and Algorithms for Public Policy course at Sciences Po.
 
-This instrument is a toy model aimed at understanding how real like Risk Terrain Models function, in the context of an investigation on one used by the Metropolitan Police of London. The modelling is statistically inconclusive, due to constraints in the data publicly available on criminality in France, but is a useful pedagogical tool. 
+The objective is to construct a predictive spatial model that identifies environmental risk factors associated with urban incidents, primarily serving as a proof-of-concept inspired by operational RTM methods, such as those used by the Metropolitan Police in London.
 
-None of the conclusions on distribution of crime and risk in the city present should be taken for anything more than speculative. 
+**Information**
+
+The RTM simulation is performed on a 200m×200m spatial grid covering the Paris arrondissements.
+
+The Target Variable are  public service reports from the "Dans Ma Rue" application.
+
+The model uses distance metrics to the following location types as risk factors: nightclubs, fast food locations, clubs and police stations.
+
+The statistical model used is  Negative Binomial Generalized Linear Model (GLM.NB). This approach is used because incident count data is typically over-dispersed (variance exceeds the mean), which is standard practice in applied RTM. The model uses an area offset to predict the rate or density of incidents.
+
+**Acknowledgement**
+
+This work follows the conceptual and coding framework established in "Public Policy Analytics: Code & Context for Data Science in Government" by Ken Steif, Ph.D. Significant parts of this code are co-authored by Gemini and Claude Sonnet 4.5.
+
+Author: Giovanni Cerboni
+
+Disclaimer: All model predictions are purely speculative, intended for academic demonstration, and should not be used for operational public policy decisions.
