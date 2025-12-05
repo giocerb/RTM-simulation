@@ -49,7 +49,7 @@ police_base <- st_read(here("data", "carte-des-points-daccueil-police-a-paris.ge
   st_transform(2154)
 
 # Load Target Variable
-marue_sf <- st_read(here("data", "dans-ma-rue.geojson"), quiet = TRUE) %>%
+marue_sf <- readRDS(here("data", "dans_ma_rue_thin.rds")) %>%
   st_transform(2154)
 
 
