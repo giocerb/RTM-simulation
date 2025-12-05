@@ -6,7 +6,6 @@ library(spdep)
 library(FNN)
 library(grid)
 library(patchwork) 
-install.packages("here")
 library(here)
 library(MASS)
 
