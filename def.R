@@ -147,7 +147,6 @@ squares_section$dist_pol_cap <- pmin(squares_section$dist_police, 2000)
 ggplot(data = squares_section) +
   geom_sf(aes(fill = dist_pol_cap), color = NA) +
   scale_fill_viridis_c(option = "magma", direction = -1, 
-                       labels = c("0", "500", "1000", "1500", "2000+"), 
                        name = "Avg Dist (m)") +
   labs(title = "Distance to nearest police station", caption = "Data Source: Région Île-de-France") +
   scale_alpha(range = c(0.1, 0.9), guide = "none")
@@ -180,13 +179,6 @@ ggplot() +
   geom_point(data = metro_coord, aes(x = X, y = Y), color = "red", size = 2, alpha = 0.7) +
   scale_fill_viridis_c(option = "magma", name = "Density") +
   labs(title = "Nightclubs in Paris", caption = "Data Source: Apur") +
-  theme_void()
-
-# Club Density (Grid) - Note: Uses marue_count as fill
-ggplot(data = squares_section) +
-  geom_sf(aes(fill = marue_count), color = NA) +
-  scale_fill_viridis_c(option = "cividis", name = "Club Count") +
-  labs(title = "Density of Clubs in Paris", subtitle = "RTM Grid Analysis") +
   theme_void()
 
 # Dans Ma Rue (Density)
